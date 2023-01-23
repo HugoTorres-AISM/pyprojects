@@ -1,5 +1,5 @@
 import os, time, random
-
+pause = 'pause > NUL'
 bline = 'echo.'
 p = 0
 
@@ -25,13 +25,15 @@ def validansw(var):
 def corr(v):
     if (v == True):
             os.system(bline)
-            os.system('echo [37m[44m ! [0m Respuesta correcta[0m')
+            os.system('echo [37m[44m ! [0m Respuesta correcta, presiona cualquier tecla para continuar.[0m')
             os.system(bline)
             p = +3
+            os.system(pause)
     else: 
             os.system(bline)
-            os.system('echo [37m[41m ! [0m Respuesta incorrecta.[0m')
+            os.system('echo [37m[41m ! [0m Respuesta incorrecta, presiona cualquier tecla para continuar.[0m')
             os.system(bline)
+            os.system(pause)
 
 os.system('@echo off')
 os.system(bline)
@@ -39,9 +41,9 @@ os.system('echo [37m[44m ! [0m Bienvenido al juego, ¿Cúal es tu nombre?[0m
 os.system(bline)
 name = input('> ')
 os.system(bline)
-os.system('echo [37m[44m ! [0m ¡Maravilloso, presiona cualquier tecla para iniciar![0m')
+os.system('echo [37m[44m ! [0m ¡Maravilloso, ' + name.title() + ', presiona cualquier tecla para iniciar![0m')
 os.system(bline)
-os.system('pause > NUL')
+os.system(pause)
 #Inicio preg
 os.system('cls')
 os.system(bline)
