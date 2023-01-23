@@ -3,9 +3,6 @@ pause = 'pause > NUL'
 bline = 'echo.'
 p = 0
 
-def pause():
-    os.system(pause)
-
 def checkansw(var):
     if (var == 'a'):
         return True
@@ -117,3 +114,8 @@ if (r5 == 'a'):
     corr(True)
 else:
     corr(False)
+os.system('echo [37m[44m                                         [0m[0m[37m[44m [0m[0m')
+os.system('echo [37m[44m [0m                                        [0m[37m[44m [0m[0m')
+os.system('echo [37m[44m [0m  Has obtenido '+str(p)+' puntos.[0m')
+os.system('echo [37m[44m [0m                                        [0m[37m[44m [0m[0m')
+os.system('echo [37m[44m                                         [0m[0m[37m[44m [0m[0m')
