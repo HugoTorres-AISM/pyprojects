@@ -3,6 +3,9 @@ pause = 'pause > NUL'
 bline = 'echo.'
 p = 0
 
+def pause():
+    os.system(pause)
+
 def checkansw(var):
     if (var == 'a'):
         return True
