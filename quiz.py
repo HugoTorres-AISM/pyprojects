@@ -1,10 +1,13 @@
+#Importamos bazofia
 import os, time, random
 os.system('cls')
+#Marcamos las variables, y especificamos que P es global.
 global p
 pause = 'pause > NUL'
 bline = 'echo.'
+name = '0'
 p = 0
-
+#Especificamos las funciones que usaremos.
 def checkansw(var):
     if (var == 'a'):
         return True
@@ -37,12 +40,16 @@ def corr(v):
             os.system('echo [37m[41m ! [0m Respuesta incorrecta, presiona cualquier tecla para continuar.[0m')
             os.system(bline)
             os.system(pause)
-
+#Inicio del juego.
 os.system('@echo off')
-os.system(bline)
-os.system('echo [37m[44m ! [0m Bienvenido al juego, ¿Cúal es tu nombre?[0m')
-os.system(bline)
-name = input('> ')
+while True:
+    os.system('cls')
+    os.system(bline)
+    os.system('echo [37m[44m ! [0m Bienvenido al juego, ¿Cúal es tu nombre?[0m')
+    os.system(bline)
+    name = input('> ')
+    if len(name) > 2:
+        break
 os.system(bline)
 os.system('echo [37m[44m ! [0m ¡Maravilloso, ' + name.title() + ', presiona cualquier tecla para iniciar![0m')
 os.system(bline)
