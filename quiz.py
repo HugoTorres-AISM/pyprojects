@@ -36,9 +36,11 @@ def corr(v):
             p = p+3
             os.system(pause)
     else: 
+            global p
             os.system(bline)
             os.system('echo [37m[41m ! [0m Respuesta incorrecta, presiona cualquier tecla para continuar.[0m')
             os.system(bline)
+            p = p-1
             os.system(pause)
 #Inicio del juego.
 os.system('@echo off')
