@@ -1,17 +1,21 @@
-def printc (O00O00O0OOO0OOO0O ):#line:1
+def printc(str):#line:1
     import os #line:2
-    os .system ('echo '+O00O00O0OOO0OOO0O )#line:3
-def binput ():#line:4
-    OO00O000OO00OOO0O =input ('> ')#line:5
-    return OO00O000OO00OOO0O #line:6
-def getn (OO0O0O000O0O0O00O ,O0OO00O000O0OO0O0 ,OO0O000OO00OOO0OO ):#line:7
-    if (OO0O0O000O0O0O00O >O0OO00O000O0OO0O0 and OO0O0O000O0O0O00O >OO0O000OO00OOO0OO ):#line:8
-        return OO0O0O000O0O0O00O #line:9
-    else :#line:10
-        if (O0OO00O000O0OO0O0 >OO0O000OO00OOO0OO ):#line:11
-            return O0OO00O000O0OO0O0 #line:12
-        else :#line:13
-            if (OO0O0O000O0O0O00O <OO0O000OO00OOO0OO ):#line:14
-                return OO0O000OO00OOO0OO #line:15
-            else :#line:16
-                return OO0O0O000O0O0O00O 
+    os.system('echo.')
+    os.system ('echo '+str )#line:3
+    os.system('echo.')
+def binput():#line:4
+    str = input ('> ')#line:5
+    return str #line:6
+def getn(n1 ,n2 ,n3 ):#line:7
+    from printc import printc
+    try:
+        if (n1 > n2 and n1 > n3):
+            return n1
+        else:
+            if (n2 > n3):
+                return n2
+            else:
+                return n3
+    except ValueError as e:
+        printc('[37m[41m ! [0m Hubo un error inesperado y el número no puedo ser obtenido. | [0m',e)
+        return -1
