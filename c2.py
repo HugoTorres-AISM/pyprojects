@@ -14,3 +14,8 @@ def addn(num):
 while True:
     printc('[37m[44m ! [0m Inserte otro número. (Use: cancel para finalizar.)[0m')
     numb = binput()
+    if (numb == 'cancel'):
+        break
+    else:
+        addn(numb)
+printc(string(arr))
