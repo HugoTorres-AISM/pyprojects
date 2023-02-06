@@ -3,6 +3,11 @@ def printc(str):#line:1
     os.system('echo.')
     os.system ('echo '+str )#line:3
     os.system('echo.')
+def printb(str):#line:1
+    import os #line:2
+    os.system('echo.')
+    os.system ('echo [37m[44m ! [0m '+str+'[0m' )#line:3
+    os.system('echo.')
 def binput():#line:4
     str = input ('> ')#line:5
     return str #line:6
