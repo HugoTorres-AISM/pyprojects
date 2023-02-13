@@ -1,8 +1,8 @@
 def printc(str):#line:1
     import os #line:2
-    os.system('echo.')
+    os.system("echo.")
     os.system ('echo '+str )#line:3
-    os.system('echo.')
+    os.system("echo.")
 def printb(str):#line:1
     import os #line:2
     os.system('echo.')
@@ -26,3 +26,6 @@ def getn(n1 ,n2 ,n3 ):#line:7
         return -1
 def intersection(list_a, list_b):
     return [ e for e in list_a if e in list_b ]
+def pause():
+    import os
+    os.system('pause > NUL')

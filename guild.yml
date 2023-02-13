@@ -1,0 +1,17 @@
+# Sample Guild file - modify for your project.
+#
+# - See https://my.guild.ai/docs/guildfile for more information.
+# - See https://my.guild.ai/cheatsheets/guildfile for examples.
+#
+# Operations are defined below. They're run using `guild run <op name>`.
+
+op-1:
+  description: Sample Python based operation
+  main: guild.pass  # replace guild.pass with your main module name
+  flags-import: all
+
+op-2:
+  description: Sample shell based operation
+  exec: echo Hello ${name}
+  flags:
+    name: Joe
