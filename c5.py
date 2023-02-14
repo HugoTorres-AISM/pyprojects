@@ -28,4 +28,4 @@ while (int(rest2) <= int(x1)):
     rest1 = rest1+1
     rest2 = rest2+1
     printb('Estado: '+str(rest1-1)+'/'+str(x1))
-printb(str(res))
+printb('No se para que sirve, pero toma: '+str(res))
