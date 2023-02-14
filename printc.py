@@ -29,3 +29,6 @@ def intersection(list_a, list_b):
 def pause():
     import os
     os.system('pause > NUL')
+def clear():
+    import os
+    os.system('cls')
